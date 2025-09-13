@@ -12,7 +12,7 @@ function PostDetail() {
 
     return (
         <div>
-            <h2>{post.title}</h2>
+            <h2 className='text-2xl font-bold text-gray-900'>{post.title}</h2>
             <p>{post.excerpt}</p>
         </div>
     );

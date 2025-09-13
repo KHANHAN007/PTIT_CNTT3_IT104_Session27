@@ -7,12 +7,12 @@ export const routers = createBrowserRouter([
         path: '/blog', element: <Blog />,
         children: [
             {
-                path: 'posts', element: <Posts />,
-                children: [
-                    { path:'postdetail/:id', element:<PostDetail></PostDetail> }
-                ]
-             },
+                path: 'posts', element: <Posts />
+            },
+            {
+                path: 'posts/postdetail/:id', element: <PostDetail />
+            }
         ]
     },
 
-])
+])      
